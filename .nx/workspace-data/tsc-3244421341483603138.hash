@@ -1,0 +1,1522 @@
+{
+  "12323074363995277863_apps/audi/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/audi"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/audi/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "3522586877559401096_apps/ford/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/ford"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/ford/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "3102950151034104764_apps/lincoln/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/lincoln"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/lincoln/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "881622952561888743_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{workspaceRoot}/node_modules",
+          "!{workspaceRoot}/tmp",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ]
+      }
+    }
+  },
+  "881622952561888743_libs/ui/tsconfig.lib.json": {
+    "targets": {}
+  },
+  "9535510034343266363_tsconfig.base.json": {
+    "targets": {}
+  },
+  "9535510034343266363_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "9794567480404553771_apps/ford/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "apps/ford"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/ford/.next/types/**/*.ts",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "11240679472216684798_tsconfig.base.json": {
+    "targets": {}
+  },
+  "11240679472216684798_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "12182543823788828649_apps/audi/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/audi"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/audi/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "1232608354656038305_tsconfig.base.json": {
+    "targets": {}
+  },
+  "1232608354656038305_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "15416048191562167519_apps/audi/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/audi"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/audi/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "12334941334111522621_tsconfig.base.json": {
+    "targets": {}
+  },
+  "12334941334111522621_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "10225559669667388965_apps/audi/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/audi"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/audi/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "8430676864973254217_tsconfig.base.json": {
+    "targets": {}
+  },
+  "8430676864973254217_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "17760780008464898616_apps/audi/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/audi"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/audi/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "795423047675977191_tsconfig.base.json": {
+    "targets": {}
+  },
+  "795423047675977191_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "13535256597622931676_apps/audi/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/audi"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/audi/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "6101247456483861415_tsconfig.base.json": {
+    "targets": {}
+  },
+  "6101247456483861415_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "14879074950484002565_apps/ford/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "apps/ford"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/ford/.next/types/**/*.ts",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "6308030113777121733_tsconfig.base.json": {
+    "targets": {}
+  },
+  "6308030113777121733_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "9165728425667392266_apps/ford/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "apps/ford"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/ford/.next/types/**/*.ts",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "8323811633780532151_tsconfig.base.json": {
+    "targets": {}
+  },
+  "8323811633780532151_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "13647161423183166087_apps/ford/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "apps/ford"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/ford/.next/types/**/*.ts",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "10559595290717589106_tsconfig.base.json": {
+    "targets": {}
+  },
+  "10559595290717589106_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "14735074381361675052_apps/lincoln/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/lincoln"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/lincoln/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "14272271902002117301_tsconfig.base.json": {
+    "targets": {}
+  },
+  "14272271902002117301_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "12674083203419825571_apps/lincoln/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/lincoln"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/lincoln/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "12482457372843064067_tsconfig.base.json": {
+    "targets": {}
+  },
+  "12482457372843064067_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "11676929474994865431_apps/audi/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "apps/audi"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/audi/.next/types/**/*.ts",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "5624667107629661385_apps/lincoln/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "apps/lincoln"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "{workspaceRoot}/dist/apps/lincoln/.next/types/**/*.ts",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "!{projectRoot}/jest.config.ts",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "15795271715349049027_tsconfig.base.json": {
+    "targets": {}
+  },
+  "15795271715349049027_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "3713987987572885274_tsconfig.base.json": {
+    "targets": {}
+  },
+  "3713987987572885274_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  },
+  "13252368918883288121_tsconfig.base.json": {
+    "targets": {}
+  },
+  "13252368918883288121_tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --pretty --verbose",
+        "options": {
+          "cwd": "."
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/next-env.d.ts",
+          "{projectRoot}/**/*.ts",
+          "{projectRoot}/**/*.tsx",
+          "{projectRoot}/.next/types/**/*.ts",
+          "!{projectRoot}/node_modules",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo"
+        ]
+      }
+    }
+  }
+}

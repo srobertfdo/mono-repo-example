@@ -1,0 +1,792 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.0",
+  "deps": {
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.263.1",
+    "clsx": "^2.0.0",
+    "class-variance-authority": "^0.7.0",
+    "tailwind-merge": "^1.14.0",
+    "@nx/eslint": "19.5.0",
+    "@nx/eslint-plugin": "19.5.0",
+    "@nx/js": "19.5.0",
+    "@nx/next": "19.5.0",
+    "@nx/react": "19.5.0",
+    "@nx/workspace": "19.5.0",
+    "@types/node": "18.16.9",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "~8.57.0",
+    "eslint-config-next": "14.2.5",
+    "nx": "19.5.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "~5.5.2"
+  },
+  "pathMappings": {
+    "@automotive/ui": [
+      "libs/ui/src/index.ts"
+    ],
+    "@automotive/ui/*": [
+      "libs/ui/src/lib/*"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/js/typescript",
+      "options": {}
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {}
+    },
+    {
+      "name": "@nx/next/plugin",
+      "options": {}
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "ford": [
+        {
+          "file": "apps/ford/app/globals.css",
+          "hash": "17481972560373274916"
+        },
+        {
+          "file": "apps/ford/app/layout.tsx",
+          "hash": "6578297907709474390",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/ford/app/page.tsx",
+          "hash": "9576079180355398722",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/ford/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "apps/ford/next.config.js",
+          "hash": "1177224949819316890",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/ford/postcss.config.js",
+          "hash": "9635447694524485215"
+        },
+        {
+          "file": "apps/ford/project.json",
+          "hash": "6212401012831800299"
+        },
+        {
+          "file": "apps/ford/tailwind.config.js",
+          "hash": "9694463909660920552",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "apps/ford/tsconfig.json",
+          "hash": "18387435777594822134"
+        }
+      ],
+      "lincoln": [
+        {
+          "file": "apps/lincoln/app/globals.css",
+          "hash": "1313200078048963698"
+        },
+        {
+          "file": "apps/lincoln/app/layout.tsx",
+          "hash": "13010763958888891508",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/lincoln/app/page.tsx",
+          "hash": "2012422221454679812",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/lincoln/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "apps/lincoln/next.config.js",
+          "hash": "1177224949819316890",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/lincoln/postcss.config.js",
+          "hash": "9635447694524485215"
+        },
+        {
+          "file": "apps/lincoln/project.json",
+          "hash": "16008841309753469839"
+        },
+        {
+          "file": "apps/lincoln/tailwind.config.js",
+          "hash": "9694463909660920552",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "apps/lincoln/tsconfig.json",
+          "hash": "6498641660571550777"
+        }
+      ],
+      "automotive-monorepo": [
+        {
+          "file": ".editorconfig",
+          "hash": "5443105041930014821"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "3902185630965659241"
+        },
+        {
+          "file": ".nx/workspace-data/d/server-process.json",
+          "hash": "15269453059104820721"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "3833545590435012078"
+        },
+        {
+          "file": "README.md",
+          "hash": "10746542658491142766"
+        },
+        {
+          "file": "SETUP.md",
+          "hash": "2211253989922677962"
+        },
+        {
+          "file": "app/globals.css",
+          "hash": "4349301627700006833"
+        },
+        {
+          "file": "app/layout.tsx",
+          "hash": "5805426534152256847",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "app/page.tsx",
+          "hash": "1078973046028423317",
+          "deps": [
+            "ui"
+          ]
+        },
+        {
+          "file": "components.json",
+          "hash": "11204775847090811731"
+        },
+        {
+          "file": "components/theme-provider.tsx",
+          "hash": "13432393501997083559",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/accordion.tsx",
+          "hash": "13528365161596224788",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/alert-dialog.tsx",
+          "hash": "11015655068511686163",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/alert.tsx",
+          "hash": "1861621377426642757",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "components/ui/aspect-ratio.tsx",
+          "hash": "5515004553788436449"
+        },
+        {
+          "file": "components/ui/avatar.tsx",
+          "hash": "8660661188500548189",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/badge.tsx",
+          "hash": "8406134610660828449",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "components/ui/breadcrumb.tsx",
+          "hash": "16363177524338459737",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/button.tsx",
+          "hash": "11257389123344437734",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "components/ui/calendar.tsx",
+          "hash": "17884673123540330260",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/card.tsx",
+          "hash": "8258172798928960664",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/carousel.tsx",
+          "hash": "7809358582496626023",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/chart.tsx",
+          "hash": "14678223243801783731",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/checkbox.tsx",
+          "hash": "3030074975486641973",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/collapsible.tsx",
+          "hash": "11550741736187478023"
+        },
+        {
+          "file": "components/ui/command.tsx",
+          "hash": "3513171263610244224",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/context-menu.tsx",
+          "hash": "8809089216007001357",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/dialog.tsx",
+          "hash": "4826683649329989396",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/drawer.tsx",
+          "hash": "12662813428787543576",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/dropdown-menu.tsx",
+          "hash": "3762317119239581082",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/form.tsx",
+          "hash": "16752308641568986931",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/hover-card.tsx",
+          "hash": "1120689349430845509",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/input-otp.tsx",
+          "hash": "5493113944525311507",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/input.tsx",
+          "hash": "667422176216627357",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/label.tsx",
+          "hash": "17461498100996495370",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "components/ui/menubar.tsx",
+          "hash": "9155896099367651780",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/navigation-menu.tsx",
+          "hash": "13877511562904234290",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/pagination.tsx",
+          "hash": "12933609959293049490",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/popover.tsx",
+          "hash": "17435332130791270188",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/progress.tsx",
+          "hash": "17647409214643394547",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/radio-group.tsx",
+          "hash": "10646533303141561680",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/resizable.tsx",
+          "hash": "7119411678047791219",
+          "deps": [
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/scroll-area.tsx",
+          "hash": "17018798627201134961",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/select.tsx",
+          "hash": "9158532778847058189",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/separator.tsx",
+          "hash": "1978076718437868180",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/sheet.tsx",
+          "hash": "1045531335628912137",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/sidebar.tsx",
+          "hash": "3231144648939937796",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/skeleton.tsx",
+          "hash": "7739192301396167804"
+        },
+        {
+          "file": "components/ui/slider.tsx",
+          "hash": "9902970018556264173",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/sonner.tsx",
+          "hash": "997587589519513927"
+        },
+        {
+          "file": "components/ui/switch.tsx",
+          "hash": "13395189205378817470",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/table.tsx",
+          "hash": "12220893068497995597",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/tabs.tsx",
+          "hash": "12745308935332524510",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/textarea.tsx",
+          "hash": "11500692197031149961",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/toast.tsx",
+          "hash": "14657746038572471583",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "components/ui/toaster.tsx",
+          "hash": "12424583411356286543"
+        },
+        {
+          "file": "components/ui/toggle-group.tsx",
+          "hash": "12069551333688425799",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "components/ui/toggle.tsx",
+          "hash": "17567376903015361437",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "components/ui/tooltip.tsx",
+          "hash": "15991294883522004040",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/use-mobile.tsx",
+          "hash": "14900138732519213047",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "components/ui/use-toast.ts",
+          "hash": "1926694879104732356",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "hooks/use-mobile.tsx",
+          "hash": "14900138732519213047",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "hooks/use-toast.ts",
+          "hash": "1926694879104732356",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "lib/utils.ts",
+          "hash": "6483145186850064023",
+          "deps": [
+            "npm:clsx",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "next.config.mjs",
+          "hash": "5752759835755451387"
+        },
+        {
+          "file": "nx.json",
+          "hash": "17995101273043321937"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "12658906156860243"
+        },
+        {
+          "file": "package.json",
+          "hash": "6011874705832811066",
+          "deps": [
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/js",
+            "npm:@nx/next",
+            "npm:@nx/react",
+            "npm:@nx/workspace",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:nx",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:lucide-react",
+            "npm:clsx",
+            "npm:class-variance-authority",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "styles/globals.css",
+          "hash": "4349301627700006833"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "5041381326142161390",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "3099397600317362514"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "6452373557473745169"
+        },
+        {
+          "file": "docs/MONOREPO_ATOMIC_DESIGN_GUIDE.md",
+          "hash": "16148688326911587286"
+        }
+      ],
+      "audi": [
+        {
+          "file": "apps/audi/app/globals.css",
+          "hash": "4245941108333385600"
+        },
+        {
+          "file": "apps/audi/app/layout.tsx",
+          "hash": "10377729113980072109",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/audi/app/page.tsx",
+          "hash": "3701155717930728218",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/audi/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "apps/audi/next.config.js",
+          "hash": "1177224949819316890",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/audi/postcss.config.js",
+          "hash": "9635447694524485215"
+        },
+        {
+          "file": "apps/audi/project.json",
+          "hash": "10960114077207375624"
+        },
+        {
+          "file": "apps/audi/tailwind.config.js",
+          "hash": "9694463909660920552",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "apps/audi/tsconfig.json",
+          "hash": "242407738967473905"
+        }
+      ],
+      "ui": [
+        {
+          "file": "libs/ui/project.json",
+          "hash": "10600436561848566232"
+        },
+        {
+          "file": "libs/ui/src/index.ts",
+          "hash": "9366430296114073399"
+        },
+        {
+          "file": "libs/ui/src/lib/atoms/Button.tsx",
+          "hash": "7679498351197434906",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/atoms/Input.tsx",
+          "hash": "4456518631776891734",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/atoms/index.ts",
+          "hash": "15047474472121794164"
+        },
+        {
+          "file": "libs/ui/src/lib/molecules/SearchBar.tsx",
+          "hash": "1726321671691618113",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/molecules/index.ts",
+          "hash": "6258064096569596133"
+        },
+        {
+          "file": "libs/ui/src/lib/organisms/SubNav.tsx",
+          "hash": "9311799787650011700",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/organisms/index.ts",
+          "hash": "10463645393086335852"
+        },
+        {
+          "file": "libs/ui/src/lib/utils.ts",
+          "hash": "7693891966047857635",
+          "deps": [
+            "npm:clsx",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "libs/ui/tsconfig.json",
+          "hash": "6369506199329709072"
+        },
+        {
+          "file": "libs/ui/tsconfig.lib.json",
+          "hash": "15319546258579474349"
+        }
+      ]
+    }
+  }
+}

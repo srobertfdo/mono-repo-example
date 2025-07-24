@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build ui",
+    "startTime": "2025-07-24T17:29:19.634Z",
+    "endTime": "2025-07-24T17:29:20.320Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "ui:build",
+      "target": "build",
+      "projectName": "ui",
+      "hash": "6600436837909573405",
+      "startTime": "2025-07-24T17:29:19.638Z",
+      "endTime": "2025-07-24T17:29:20.320Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+dist/
+out/
+
+# Build output
+.next/
+coverage/
+tmp/
+temp/
+
+# Nx specific
+nx-report.html
+.project.json
+
+# Optional: Ignore VSCode & system files
+.vscode/
+.DS_Store
+
+# Env files (secure them)
+.env
+.env.local
+.env.*.local
+
+# Optional cache folders
+.cache/
+.idea/
+
+# Generated lock files (choose one)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
