@@ -18,7 +18,7 @@ This architecture separates **what components look like** (UI library) from **wh
 
 ## 🏗 Architecture Overview
 
-\`\`\`
+```
 monorepo/
 ├── apps/                    # Applications (Business Logic)
 │   ├── ford/               # Ford-specific logic
@@ -29,42 +29,40 @@ monorepo/
         ├── atoms/          # Basic components
         ├── molecules/      # Composite components
         └── organisms/      # Complex components
-\`\`\`
+```
 
 ## ⚛️ Atomic Design Explained
 
 ### Atoms (Basic Building Blocks)
 **Purpose**: Fundamental UI elements with no business logic
 
-\`\`\`tsx
+```tsx
 // libs/ui/atoms/Button.tsx
 interface ButtonProps {
   children: React.ReactNode
-  onClick: () => void        // ← Handler injected from app
+  onClick: () => void
   variant?: 'primary' | 'secondary'
 }
 
 export const Button = ({ children, onClick, variant = 'primary' }) => (
   <button 
     className={`btn btn-${variant}`}
-    onClick={onClick}         // ← Delegates to app
+    onClick={onClick}
   >
     {children}
   </button>
 )
-\`\`\`
-
-**Key Principle**: Atoms receive handlers, never create them.
+```
 
 ### Molecules (Simple Combinations)
 **Purpose**: Combine atoms into functional units
 
-\`\`\`tsx
+```tsx
 // libs/ui/molecules/SearchBar.tsx
 interface SearchBarProps {
   placeholder: string
   value: string
-  onChange: (value: string) => void  // ← Handler injected from app
+  onChange: (value: string) => void
 }
 
 export const SearchBar = ({ placeholder, value, onChange }) => (
@@ -73,45 +71,36 @@ export const SearchBar = ({ placeholder, value, onChange }) => (
     <Input 
       placeholder={placeholder}
       value={value}
-      onChange={(e) => onChange(e.target.value)}  // ← Delegates to app
+      onChange={(e) => onChange(e.target.value)}
     />
   </div>
 )
-\`\`\`
+```
 
 ### Organisms (Complex Components)
 **Purpose**: Combine molecules and atoms into complete UI sections
 
-\`\`\`tsx
+```tsx
 // libs/ui/organisms/SubNav.tsx
 interface SubNavProps {
   icon: React.ReactNode
-  onClick: () => void                    // ← App-specific action
+  onClick: () => void
   placeholder: string
   searchValue: string
-  onSearchChange: (value: string) => void // ← App-specific search logic
+  onSearchChange: (value: string) => void
 }
 
-export const SubNav = ({ 
-  icon, 
-  onClick, 
-  placeholder, 
-  searchValue, 
-  onSearchChange 
-}) => (
+export const SubNav = ({ icon, onClick, placeholder, searchValue, onSearchChange }) => (
   <nav className="subnav">
-    <Button onClick={onClick}>          {/* ← Delegates to app */}
-      {icon}
-    </Button>
-    
+    <Button onClick={onClick}>{icon}</Button>
     <SearchBar 
       placeholder={placeholder}
       value={searchValue}
-      onChange={onSearchChange}          {/* ← Delegates to app */}
+      onChange={onSearchChange}
     />
   </nav>
 )
-\`\`\`
+```
 
 ## 🔄 Handler Injection Pattern
 
@@ -119,10 +108,10 @@ export const SubNav = ({
 
 ### ✅ Correct Implementation
 
-\`\`\`tsx
+```tsx
 // UI Component (libs/ui)
 interface ComponentProps {
-  onAction: (data: ActionData) => void  // ← Interface only
+  onAction: (data: ActionData) => void
 }
 
 const Component = ({ onAction }) => (
@@ -134,23 +123,21 @@ const Component = ({ onAction }) => (
 // App Implementation (apps/ford)
 const FordApp = () => {
   const handleAction = (data: ActionData) => {
-    // Ford-specific business logic
     validateData(data)
     saveFordData(data)
     showFordNotification()
   }
 
-  return <Component onAction={handleAction} />  // ← Implementation injected
+  return <Component onAction={handleAction} />
 }
-\`\`\`
+```
 
 ### ❌ Wrong Implementation
 
-\`\`\`tsx
+```tsx
 // DON'T DO THIS - Business logic in UI component
 const BadComponent = ({ userId }) => {
   const handleClick = () => {
-    // ❌ Business logic in UI component
     const user = UserService.getUser(userId)
     UserService.updateUser(user)
     NotificationService.show('Updated!')
@@ -158,268 +145,144 @@ const BadComponent = ({ userId }) => {
 
   return <button onClick={handleClick}>Update</button>
 }
-\`\`\`
+```
 
 ## 🚗 Real-World Example
 
-### Shared Component (One Component, Multiple Behaviors)
-
-\`\`\`tsx
-// libs/ui/organisms/SubNav.tsx - Used by all apps
-export const SubNav = ({ icon, onClick, placeholder, searchValue, onSearchChange }) => (
-  <nav>
-    <Button onClick={onClick}>{icon}</Button>
-    <SearchBar placeholder={placeholder} value={searchValue} onChange={onSearchChange} />
-  </nav>
-)
-\`\`\`
-
 ### Ford App (Slideout Behavior)
 
-\`\`\`tsx
+```tsx
 // apps/ford/page.tsx
 export default function FordPage() {
   const [isSlideoutOpen, setIsSlideoutOpen] = useState(false)
   const [searchValue, setSearchValue] = useState("")
 
   const handleMenuClick = () => {
-    setIsSlideoutOpen(true)              // Ford-specific behavior
-    trackEvent('ford_menu_opened')       // Ford-specific analytics
+    setIsSlideoutOpen(true)
+    trackEvent('ford_menu_opened')
   }
 
   return (
     <>
       <SubNav
         icon={<Menu />}
-        onClick={handleMenuClick}         // ← Ford-specific handler
+        onClick={handleMenuClick}
         placeholder="Search Ford vehicles..."
         searchValue={searchValue}
         onSearchChange={setSearchValue}
       />
-      
-      {isSlideoutOpen && <FordSlideout />}  {/* Ford-specific UI */}
+      {isSlideoutOpen && <FordSlideout />}
     </>
   )
 }
-\`\`\`
+```
 
 ### Lincoln App (Modal Behavior)
 
-\`\`\`tsx
+```tsx
 // apps/lincoln/page.tsx
 export default function LincolnPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [searchValue, setSearchValue] = useState("")
 
   const handleSettingsClick = () => {
-    setIsModalOpen(true)                 // Lincoln-specific behavior
-    trackEvent('lincoln_settings_opened') // Lincoln-specific analytics
+    setIsModalOpen(true)
+    trackEvent('lincoln_settings_opened')
   }
 
   return (
     <>
       <SubNav
         icon={<Settings />}
-        onClick={handleSettingsClick}    // ← Lincoln-specific handler
+        onClick={handleSettingsClick}
         placeholder="Search Lincoln luxury vehicles..."
         searchValue={searchValue}
         onSearchChange={setSearchValue}
       />
-      
-      {isModalOpen && <LincolnModal />}   {/* Lincoln-specific UI */}
+      {isModalOpen && <LincolnModal />}
     </>
   )
 }
-\`\`\`
+```
 
 ### Audi App (Redirect Behavior)
 
-\`\`\`tsx
+```tsx
 // apps/audi/page.tsx
 export default function AudiPage() {
   const [searchValue, setSearchValue] = useState("")
 
   const handleExternalClick = () => {
-    trackEvent('audi_external_clicked')   // Audi-specific analytics
-    window.open('https://audi.com')       // Audi-specific behavior
+    trackEvent('audi_external_clicked')
+    window.open('https://audi.com')
   }
 
   return (
     <SubNav
       icon={<ExternalLink />}
-      onClick={handleExternalClick}      // ← Audi-specific handler
+      onClick={handleExternalClick}
       placeholder="Search Audi models..."
       searchValue={searchValue}
       onSearchChange={setSearchValue}
     />
   )
 }
-\`\`\`
+```
 
 ## 📋 Best Practices
 
-### 1. Component Design
-
-\`\`\`tsx
-// ✅ Good: Pure, reusable component
-interface ButtonProps {
-  children: React.ReactNode
-  onClick: () => void
-  variant?: 'primary' | 'secondary'
-  disabled?: boolean
-}
-
-// ❌ Bad: Component with business logic
-interface BadButtonProps {
-  userId: string           // ❌ Business data
-  apiEndpoint: string      // ❌ Business logic
-  onSuccess: () => void    // ❌ Business flow
-}
-\`\`\`
-
-### 2. Props Interface Design
-
-\`\`\`tsx
-// ✅ Good: Clear separation of concerns
-interface ComponentProps {
-  // Data (what to show)
-  title: string
-  items: Item[]
-  
-  // Behavior (what to do)
-  onSelect: (item: Item) => void
-  onDelete: (id: string) => void
-  
-  // Appearance (how to look)
-  variant?: 'compact' | 'detailed'
-  className?: string
-  
-  // State (current condition)
-  isLoading?: boolean
-  selectedId?: string
-}
-\`\`\`
-
-### 3. State Management
-
-\`\`\`tsx
-// ✅ UI State: Keep in component
-const Modal = ({ isOpen, onClose }) => {
-  const [isAnimating, setIsAnimating] = useState(false)  // ← UI state
-
-  return (
-    <div className={`modal ${isAnimating ? 'fade-in' : ''}`}>
-      {/* Modal content */}
-    </div>
-  )
-}
-
-// ✅ Business State: Keep in app
-const App = () => {
-  const [user, setUser] = useState(null)        // ← Business state
-  const [vehicles, setVehicles] = useState([])  // ← Business state
-
-  return <UserProfile user={user} onUpdate={setUser} />
-}
-\`\`\`
-
-### 4. Testing Strategy
-
-\`\`\`tsx
-// Test components in isolation
-describe('Button', () => {
-  it('calls onClick when clicked', () => {
-    const mockClick = jest.fn()
-    render(<Button onClick={mockClick}>Test</Button>)
-    
-    fireEvent.click(screen.getByText('Test'))
-    expect(mockClick).toHaveBeenCalled()
-  })
-})
-
-// Test app logic separately
-describe('FordPage', () => {
-  it('opens slideout when menu clicked', () => {
-    render(<FordPage />)
-    
-    fireEvent.click(screen.getByRole('button'))
-    expect(screen.getByText('Ford Menu')).toBeVisible()
-  })
-})
-\`\`\`
-
-## 🎯 Key Benefits
-
-### Development Speed
-- **60% less duplicate code** - Shared components across all apps
-- **40% faster feature delivery** - Reuse existing components
-- **50% faster onboarding** - Clear patterns and separation
-
-### Code Quality
-- **80% fewer UI bugs** - Centralized, tested components
-- **100% design consistency** - Single source of truth
-- **Easy maintenance** - Update once, apply everywhere
-
-### Team Productivity
-- **Parallel development** - Teams work independently
-- **Clear ownership** - UI team owns components, app teams own logic
-- **Scalable architecture** - Easy to add new apps
+- **UI = Pure functions**: No business logic in UI components
+- **Apps = Own logic**: Only apps control state and logic
+- **Handler Injection**: Pass logic down as props
 
 ## 🚀 Getting Started
 
-### 1. Set up the structure
-\`\`\`bash
+```bash
 npx create-nx-workspace@latest automotive-monorepo
 cd automotive-monorepo
 npx nx g @nx/next:app ford
 npx nx g @nx/react:lib ui
-\`\`\`
+```
 
-### 2. Create your first atom
-\`\`\`tsx
+Create your first shared component:
+
+```tsx
 // libs/ui/src/atoms/Button.tsx
 export const Button = ({ children, onClick, variant = 'primary' }) => (
   <button className={`btn btn-${variant}`} onClick={onClick}>
     {children}
   </button>
 )
-\`\`\`
+```
 
-### 3. Use it in your app
-\`\`\`tsx
+Use it in your app:
+
+```tsx
 // apps/ford/app/page.tsx
 import { Button } from '@automotive/ui'
 
 export default function Page() {
   const handleClick = () => alert('Ford button clicked!')
-  
   return <Button onClick={handleClick}>Ford Action</Button>
 }
-\`\`\`
+```
 
 ## 📊 Success Metrics
 
-After implementing this architecture, teams typically see:
-
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Code Reuse | 15% | 75% | 60% ↑ |
-| Development Speed | 2 weeks | 1.2 weeks | 40% ↑ |
-| UI Bugs | 12/sprint | 2.4/sprint | 80% ↓ |
-| Onboarding Time | 3 weeks | 1.5 weeks | 50% ↓ |
+| Metric           | Before     | After      | Improvement |
+|------------------|------------|------------|-------------|
+| Code Reuse       | 15%        | 75%        | 60% ↑       |
+| Dev Speed        | 2 weeks    | 1.2 weeks  | 40% ↑       |
+| UI Bugs          | 12/sprint  | 2.4/sprint | 80% ↓       |
+| Onboarding Time  | 3 weeks    | 1.5 weeks  | 50% ↓       |
 
 ## 🎯 Summary
 
-**The Three Pillars:**
+- 🧱 **Atomic Design**: Atoms → Molecules → Organisms
+- 🔌 **Handler Injection**: Logic stays in apps, UI stays pure
+- 🧩 **Monorepo Structure**: Shared components, isolated logic
 
-1. **Atomic Design** - Organize components by complexity (atoms → molecules → organisms)
-2. **Handler Injection** - UI components receive behavior, never create it
-3. **Monorepo Structure** - Shared UI library + independent applications
-
-**The Result:** One component library powering multiple applications, each with unique behaviors, maintained by different teams, with consistent design and maximum code reuse.
-
-**Remember:** UI components should never know about business logic. Business logic should never contain UI code. The handler injection pattern is the bridge that keeps them separate while enabling powerful composition.
+> This architecture is proven in real-world enterprise apps. It reduces duplication, improves scalability, and keeps code maintainable.
 
 ---
-
-*This architecture has been successfully implemented across Fortune 500 companies, reducing development time by 40% and maintenance overhead by 60%. The key to success is maintaining strict separation between presentation and business logic.*
+*Maintain UI purity. Inject behavior. Scale with clarity.*
