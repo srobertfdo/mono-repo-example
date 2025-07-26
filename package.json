@@ -29,7 +29,11 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "clean": "nx reset && rm -rf node_modules dist .nx"
+    "clean": "nx reset && rm -rf node_modules dist .nx",
+    "deploy:ford": "vercel --prod --local-config=vercel-ford.json",
+    "deploy:lincoln": "vercel --prod --local-config=vercel-lincoln.json",
+    "deploy:audi": "vercel --prod --local-config=vercel-audi.json",
+    "deploy:all": "npm run deploy:ford && npm run deploy:lincoln && npm run deploy:audi"
   },
   "private": true,
   "dependencies": {

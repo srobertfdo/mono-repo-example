@@ -1,0 +1,22 @@
+{
+  "name": "automotive-ford",
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/ford/next.config.js",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": "apps/ford/.next"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "apps/ford/$1"
+    }
+  ],
+  "buildCommand": "npx nx build ui && npx nx build ford",
+  "outputDirectory": "apps/ford/.next",
+  "installCommand": "npm install"
+}

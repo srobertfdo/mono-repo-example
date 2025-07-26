@@ -1,0 +1,22 @@
+{
+  "name": "automotive-audi",
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/audi/next.config.js",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": "apps/audi/.next"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "apps/audi/$1"
+    }
+  ],
+  "buildCommand": "npx nx build ui && npx nx build audi",
+  "outputDirectory": "apps/audi/.next",
+  "installCommand": "npm install"
+}

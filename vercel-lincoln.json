@@ -1,0 +1,22 @@
+{
+  "name": "automotive-lincoln",
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/lincoln/next.config.js",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": "apps/lincoln/.next"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "apps/lincoln/$1"
+    }
+  ],
+  "buildCommand": "npx nx build ui && npx nx build lincoln",
+  "outputDirectory": "apps/lincoln/.next",
+  "installCommand": "npm install"
+}
